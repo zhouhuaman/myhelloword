@@ -1,0 +1,10 @@
+in_file_obj = open("input.txt","r")
+print in_file_obj.tell()
+out_file_obj = open("output.txt","w")
+one_line = in_file_obj.readline()
+print in_file_obj.tell()
+for line in in_file_obj:
+	out_file_obj.write(line)
+print in_file_obj.tell()
+in_file_obj.close()
+out_file_obj.close()
